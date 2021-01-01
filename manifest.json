@@ -1,6 +1,11 @@
 {
     "manifest_version": 2,
     "name": "Food Picker",
+    "icons": {
+        "16": "swag.jpg",
+        "64": "swag.jpg",
+        "128": "swag.jpg"
+    },
     "content_scripts": [
         {
           "matches": [
