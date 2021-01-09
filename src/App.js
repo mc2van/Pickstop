@@ -9,7 +9,9 @@ function App() {
         <p>
           Need help choosing something to eat?
         </p>
-        <button>Get Started</button>
+        <form action="https://www.ubereats.com">
+          <input type="submit" value="Get Started" />
+        </form>
       </header>
     </div>
   );
