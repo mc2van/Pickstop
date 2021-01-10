@@ -1,4 +1,4 @@
-export default Home {
+export default function Home() {
     return (
         <div className="App">
           <header className="App-header">
@@ -11,5 +11,5 @@ export default Home {
             </form>
           </header>
         </div>
-    );
+    )
 }
