@@ -1,4 +1,4 @@
-export default function question1() {
+export default function Result() {
     return (
         <h1>Result</h1>
     )
