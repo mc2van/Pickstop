@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import React, { useState } from "react";
 import './App.css';
 import React from "react";
 import Home from "./pages/Home.js";
@@ -35,13 +35,14 @@ function counter(i) {
             <Q5 />
         )
     } else {
-      return (
-        <Result />
+        return (
+            <Result />
       )
     }
 }
 
 function App() {
+    const [nav, setNav] = useState(0);
     return (
         <Home />
     )
