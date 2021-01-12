@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import './App.css';
-import React from "react";
 import Home from "./pages/Home.js";
 import Q1 from "./pages/q1.js"
 import Q2 from "./pages/q2.js"
