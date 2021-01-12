@@ -11,28 +11,28 @@ import Result from "./pages/Result.js"
 function App() {
     const [nav, setNav] = useState(0);
 
-    function useNav(i) {
-        if (i === 0) {
+    function useNav() {
+        if (nav === 0) {
             return (
                 <Home changePage={changePage} />
             )
-        } else if (i === 1) {
+        } else if (nav === 1) {
             return (
                 <Q1 changePage={changePage} />
             )
-        } else if (i === 2) {
+        } else if (nav === 2) {
             return (
                 <Q2 changePage={changePage} />
             )
-        } else if (i === 3) {
+        } else if (nav === 3) {
             return (
                 <Q3 changePage={changePage} />
             )
-        } else if (i === 4) {
+        } else if (nav === 4) {
             return (
                 <Q4 changePage={changePage} />
             )
-        } else if (i === 4) {
+        } else if (nav === 4) {
             return (
                 <Q5 changePage={changePage} />
             )
