@@ -9,43 +9,46 @@ import Q4 from "./pages/q4.js"
 import Q5 from "./pages/q5.js"
 import Result from "./pages/Result.js"
 
-function counter(i) {
-    if (i === 0) {
-        return (
-            <Home />
-        )
-    } else if (i === 1) {
-        return (
-            <Q1 />
-        )
-    } else if (i === 2) {
-        return (
-            <Q2 />
-        )
-    } else if (i === 3) {
-        return (
-            <Q3 />
-        )
-    } else if (i === 4) {
-        return (
-            <Q4 />
-        )
-    } else if (i === 4) {
-        return (
-            <Q5 />
-        )
-    } else {
-        return (
-            <Result />
-      )
-    }
-}
-
 function App() {
     const [nav, setNav] = useState(0);
-    return (
-        <Home />
-    )
+
+    function useNav(i) {
+        if (i === 0) {
+            return (
+                <Home changePage={changePage} />
+            )
+        } else if (i === 1) {
+            return (
+                <Q1 changePage={changePage} />
+            )
+        } else if (i === 2) {
+            return (
+                <Q2 changePage={changePage} />
+            )
+        } else if (i === 3) {
+            return (
+                <Q3 changePage={changePage} />
+            )
+        } else if (i === 4) {
+            return (
+                <Q4 changePage={changePage} />
+            )
+        } else if (i === 4) {
+            return (
+                <Q5 changePage={changePage} />
+            )
+        } else {
+            return (
+                <Result changePage={changePage} />
+          )
+        }
+    }
+
+    function changePage(pageNum){
+        setNav(pageNum);
+    }
+
+    return <div className="App">{useNav()}</div>
 }
 
 export default App;
