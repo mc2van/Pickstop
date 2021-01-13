@@ -15,6 +15,6 @@
     "48": "icon-128-ripped-off-some-random-dude.png",
     "128": "icon-128-ripped-off-some-random-dude.png"
   },
-  "content_security_policy": "script-src 'self' 'sha256-0cIM4xqnLu/5NaU/5Kxvlp/S18Aww13Xa/zyC2v47nI='; object-src 'self'",  "permissions": [
+  "content_security_policy": "script-src 'self' 'sha256-JbKkz5ToYlyxtAlo/+dwYbkxhR83mk6WpJoQAh0tjfE='; object-src 'self'",  "permissions": [
   ]
 }
