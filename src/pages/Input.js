@@ -1,5 +1,10 @@
-export default function question1() {
+export default function Input({ changePage }) {
     return (
-        <h1>Question 1</h1>
+        <div className="App">
+            <header className="App-header">
+                <h1>Enter your restaurants</h1>
+                <button onClick={() => changePage(2)}>Submit</button>
+            </header>
+        </div>
     )
 }
