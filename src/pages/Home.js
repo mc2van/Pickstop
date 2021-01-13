@@ -6,7 +6,7 @@ export default function Home({ changePage }) {
         <p>
           Need help choosing something to eat?
         </p>
-        <button onCLick={() => changePage(1)}>Get Started</button>
+        <button onClick={() => changePage(1)}>Get Started</button>
       </header>
     </div>
   )
