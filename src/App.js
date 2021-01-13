@@ -5,29 +5,23 @@ import Input from "./pages/Input.js"
 import Result from "./pages/Result.js"
 
 function App() {
-    const [nav, setNav] = useState(0);
+    const [navigation, setNavigation] = useState(0);
 
-    function useNav() {
-        if (nav === 0) {
-            return (
-                <Home changePage={changePage} />
-            )
-        } else if (nav === 1) {
-            return (
-                <Input changePage={changePage} />
-            )
+    function useNavigation() {
+        if (navigation === 0) {
+            return <Home changePage={changePage} />;
+        } else if (navigation === 1) {
+            return <Input changePage={changePage} />;
         } else {
-            return (
-                <Result changePage={changePage} />
-          )
+            return <Result changePage={changePage} />;
         }
     }
 
-    function changePage(pageNum){
-        setNav(pageNum);
+    function changePage(pageNumber) {
+        setNavigation(pageNumber);
     }
 
-    return <div className="App">{useNav()}</div>
+    return <div className="App">{useNavigation()}</div>;
 }
 
 export default App;
