@@ -5,17 +5,20 @@ import Input from "./pages/Input.js"
 import Result from "./pages/Result.js"
 
 function App() {
-    const [navigation, setNavigation] = useState(0);
 
-    function hitcallback(callbackParams) {
-        console.log(callbackParams);
+    function hitcallback(location) {
+        console.log(location);
+        userLocation.push(location.coords.latitude);
+        userLocation.push(location.coords.longitude);
+        console.log(userLocation)
       }
-    
+    var userLocation = []
     function getCurrentLocation() {
         navigator.geolocation.getCurrentPosition(hitcallback);
     }
-
     window.onload = () => {getCurrentLocation()}
+    
+    const [navigation, setNavigation] = useState(0);
 
     function useNavigation() {
         if (navigation === 0) {
@@ -23,7 +26,7 @@ function App() {
         } else if (navigation === 1) {
             return <Input changePage={changePage} />;
         } else {
-            return <Result changePage={changePage} />;
+            return <Result />;
         }
     }
 
