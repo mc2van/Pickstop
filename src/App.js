@@ -7,6 +7,16 @@ import Result from "./pages/Result.js"
 function App() {
     const [navigation, setNavigation] = useState(0);
 
+    function hitcallback(callbackParams) {
+        console.log(callbackParams);
+      }
+    
+    function getCurrentLocation() {
+        navigator.geolocation.getCurrentPosition(hitcallback);
+    }
+
+    window.onload = () => {getCurrentLocation()}
+
     function useNavigation() {
         if (navigation === 0) {
             return <Home changePage={changePage} />;
