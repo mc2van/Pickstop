@@ -40,5 +40,14 @@
 }
 
 p {
-  margin: 0px 25px 20px 25px
+  margin: 0px 25px 20px 25px;
+}
+
+ul {
+  text-align:left;
+  list-style-type: none;
+}
+
+.button-div {
+  padding-bottom: 10%;
 }
